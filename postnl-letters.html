@@ -1,0 +1,25 @@
+<script type="text/javascript">
+  RED.nodes.registerType('postnl-letters', {
+    category: 'function',
+    color: '#4fb29d',
+    inputs: 1,
+    outputs: 1,
+    defaults: {
+      name: {value: "postnl-letters"},
+      api: {value: "", type: "postnl-config"}
+    },
+    label: function (){
+      return this.name || "postnl-letters";
+    }
+  });
+</script>
+<script type="text/x-red" data-template-name="postnl-letters">
+  <div class="form-row">
+    <label for="node-input-name"><i class="icon-tag"></i> Label</label>
+    <input type="text" id="node-input-name">
+  </div>
+  <div class="form-row">
+    <label for="node-input-api"><i class="icon-tag"></i> PostNL configuration</label>
+    <input type="text" id="node-input-api">
+  </div>
+</script>

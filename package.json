@@ -1,0 +1,20 @@
+{
+  "name": "node-red-contrib-postnl",
+  "version": "1.0.0",
+  "description": "PostNL nodes for Node-RED",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cas de Reuver (@casdr) <cas@reuver.co>",
+  "license": "GPLv3",
+  "node-red": {
+    "nodes": {
+      "postnl-config": "postnl-config.js",
+      "postnl-letters": "postnl-letters.js"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
